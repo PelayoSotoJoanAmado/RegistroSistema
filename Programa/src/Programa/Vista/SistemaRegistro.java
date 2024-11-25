@@ -11,13 +11,15 @@ public class SistemaRegistro {
             Scanner lector = new Scanner(System.in);
             int opcion =0;
             String menu="""
-                        
+                        ##############################
                         Gestión de Lenguajes
+                        ##############################
                         1. Agregar Lenguaje
                         2. Buscar Lenguaje
                         3. Eliminar Lenguaje
                         4. Imprimir los lenguajes
                         5. Salir
+                        ##############################
                         """;
             do {
                 System.out.println(menu);
@@ -61,6 +63,13 @@ public class SistemaRegistro {
                     }
                     case 4 ->{
                         GestionLenguaje.ImprimirLenguajes();
+                        System.out.println();
+                    }
+                    case 5 -> {
+                        System.out.println("Se salio correctamente del programa");
+                    }
+                    default -> {
+                        System.out.println("Opcion invalida");
                     }
                 }
             } while(opcion!=5);

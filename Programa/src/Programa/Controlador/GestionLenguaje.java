@@ -49,8 +49,12 @@ public class GestionLenguaje {
 }
     
     public static void ImprimirLenguajes(){
+        if(contadorLenguajes==0){
+            System.out.println("No se ha encontrado ningún lenguaje");
+        } else{
         for(int i=0; i<contadorLenguajes;i++){
             System.out.println(arregloLenguajes[i]);
+            }
         }
     }
     
